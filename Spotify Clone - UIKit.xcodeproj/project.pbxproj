@@ -10,7 +10,6 @@
 		49A3A33D25DAD4BC00FE3F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3A33C25DAD4BC00FE3F42 /* AppDelegate.swift */; };
 		49A3A33F25DAD4BC00FE3F42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3A33E25DAD4BC00FE3F42 /* SceneDelegate.swift */; };
 		49A3A34125DAD4BC00FE3F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3A34025DAD4BC00FE3F42 /* ViewController.swift */; };
-		49A3A34425DAD4BC00FE3F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A3A34225DAD4BC00FE3F42 /* Main.storyboard */; };
 		49A3A34625DAD4BC00FE3F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A3A34525DAD4BC00FE3F42 /* Assets.xcassets */; };
 		49A3A34925DAD4BC00FE3F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A3A34725DAD4BC00FE3F42 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		49A3A33C25DAD4BC00FE3F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A3A33E25DAD4BC00FE3F42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		49A3A34025DAD4BC00FE3F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		49A3A34325DAD4BC00FE3F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49A3A34525DAD4BC00FE3F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A3A34825DAD4BC00FE3F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49A3A34A25DAD4BC00FE3F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +35,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49345A3D25DADB7700623240 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49A3A34725DAD4BC00FE3F42 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49345A3E25DADB8F00623240 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49345A3F25DADB9300623240 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49A3A34025DAD4BC00FE3F42 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49345A4025DADB9800623240 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		49345A4125DADB9E00623240 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49A3A34525DAD4BC00FE3F42 /* Assets.xcassets */,
+				49A3A33C25DAD4BC00FE3F42 /* AppDelegate.swift */,
+				49A3A33E25DAD4BC00FE3F42 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49345A4325DADBAC00623240 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		49A3A33025DAD4BB00FE3F42 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +101,12 @@
 		49A3A33B25DAD4BC00FE3F42 /* Spotify Clone - UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				49A3A33C25DAD4BC00FE3F42 /* AppDelegate.swift */,
-				49A3A33E25DAD4BC00FE3F42 /* SceneDelegate.swift */,
-				49A3A34025DAD4BC00FE3F42 /* ViewController.swift */,
-				49A3A34225DAD4BC00FE3F42 /* Main.storyboard */,
-				49A3A34525DAD4BC00FE3F42 /* Assets.xcassets */,
-				49A3A34725DAD4BC00FE3F42 /* LaunchScreen.storyboard */,
+				49345A4125DADB9E00623240 /* Resources */,
+				49345A4025DADB9800623240 /* Managers */,
+				49345A4325DADBAC00623240 /* ViewModels */,
+				49345A3E25DADB8F00623240 /* Models */,
+				49345A3D25DADB7700623240 /* Views */,
+				49345A3F25DADB9300623240 /* Controllers */,
 				49A3A34A25DAD4BC00FE3F42 /* Info.plist */,
 			);
 			path = "Spotify Clone - UIKit";
@@ -126,7 +171,6 @@
 			files = (
 				49A3A34925DAD4BC00FE3F42 /* LaunchScreen.storyboard in Resources */,
 				49A3A34625DAD4BC00FE3F42 /* Assets.xcassets in Resources */,
-				49A3A34425DAD4BC00FE3F42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +190,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		49A3A34225DAD4BC00FE3F42 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49A3A34325DAD4BC00FE3F42 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		49A3A34725DAD4BC00FE3F42 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
